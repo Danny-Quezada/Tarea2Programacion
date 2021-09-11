@@ -108,10 +108,16 @@ namespace Infraestructure.Productos
         //añadir como parametro un producto p
         public Producto GetProductoById(int id)
 		{
-            //Array.Sort(productos, new Producto.ProductoIdCompare());
-            //         Producto prueba = new Producto { Id = id };
-            //int index = Array.BinarySearch(productos, prueba,new Producto.ProductoIdCompare());
-            Array.Sort(productos, new Producto.ProductoIdCompare());
+            if (productos != null)
+            {
+                Array.Sort(productos, new Producto.ProductoIdCompare());
+                Producto p = new Producto { Id = id };
+                int index = Array.BinarySearch(productos, p, new Producto.ProductoIdCompare());
+                return index < 0 ? null : productos[index];
+            }
+            return null;
+            //Voy a dejar el primero, fue el que probe yo y me sirvio
+            /*Array.Sort(productos, new Producto.ProductoIdCompare());
             for(int i=0; i<productos.Length; i++)
 			{
 				if (id == productos[i].Id)
@@ -120,6 +126,7 @@ namespace Infraestructure.Productos
 				}
 			}
             return null;
+            */
         }
         public Producto[] DeleteBy(Producto p)
         {
@@ -159,6 +166,25 @@ namespace Infraestructure.Productos
                 {
                     Add(p, ref tmp);
                 }
+            }
+            return tmp;
+        }
+        public Producto[] GetProductosByFechaVencimiento(DateTime dt)
+        {
+            Producto[] tmp = null;
+            int i = 0;
+            if (productos == null)
+            {
+                return tmp;
+            }
+            foreach (Producto pr in productos)
+            {
+                int validacion = (int)(productos[i].Vencimiento - dt).TotalDays;
+                if (validacion == 0)
+                {
+                    Add(pr, ref tmp);
+                }
+                i++;
             }
             return tmp;
         }
