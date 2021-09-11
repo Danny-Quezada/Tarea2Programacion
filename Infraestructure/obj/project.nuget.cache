@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "JanXUiJl8J7ANjycYmKoUk7CsXka5otJFU2JmvXoorEwMgHSLZdJbp52esohT6VtKp01A8XL33KO+1asuEvMKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZGN\\OneDrive\\Escritorio\\Programacion\\ProgramacionPractica\\Infraestructure\\Infraestructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZGN\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ZGN\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ZGN\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
