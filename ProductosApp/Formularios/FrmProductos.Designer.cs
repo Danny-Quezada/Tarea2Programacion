@@ -95,10 +95,10 @@
             this.cmbFinderType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFinderType.FormattingEnabled = true;
             this.cmbFinderType.Items.AddRange(new object[] {
-            "Unidad Medida",
-            "Rango Precio",
-            "Fecha Vencimiento",
-            "Buscar ID"});
+            "Id\t",
+            "Rango de precios\t",
+            "Unidad de medida",
+            "Fecha de vecimiento"});
             this.cmbFinderType.Location = new System.Drawing.Point(24, 24);
             this.cmbFinderType.Name = "cmbFinderType";
             this.cmbFinderType.Size = new System.Drawing.Size(191, 21);
@@ -140,6 +140,7 @@
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // nudPrecioInferior
             // 
@@ -190,6 +191,7 @@
             this.btnCerrarApp.TabIndex = 3;
             this.btnCerrarApp.Text = "Cerrar app";
             this.btnCerrarApp.UseVisualStyleBackColor = true;
+            this.btnCerrarApp.Click += new System.EventHandler(this.btnCerrarApp_Click);
             // 
             // FrmProductos
             // 

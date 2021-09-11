@@ -1,4 +1,5 @@
-﻿using Domain.Enums;
+﻿using Domain.Entities;
+using Domain.Enums;
 using Infraestructure.Productos;
 using System;
 using System.Collections.Generic;
@@ -157,6 +158,102 @@ namespace ProductosApp.Formularios
                 return;
             }
             e.Handled = true;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (cmbFinderType.SelectedIndex == 0)
+            {
+                int.TryParse(txtFinder.Text, out int id);
+                if (id > 0 || txtFinder.Text != "")
+                {
+                    Producto Tempo = productoModel.GetProductoById(id);
+                    rtbProductView.Text = "";
+                    if (Tempo == null)
+                    {
+                        rtbProductView.Text = "No se ha encontrado ningún elemento con la característica que esta buscando";
+                    }
+                    else
+                    {
+                        rtbProductView.Text = $"Id: {Tempo.Id}, Nombre: {Tempo.Nombre}, Descripcion: {Tempo.Descripcion}, Cantidad: {Tempo.Existencia}, Precio: {Tempo.Precio}, Caducidad: {Tempo.Vencimiento}, Unidad de medida: {Tempo.UnidadMedida}";
+                    }
+                }
+            }
+            if (cmbFinderType.SelectedIndex == 1)
+            {
+                int pivote = ValidarPrecios(nudPrecioInferior.Value, nudPrecioSuperior.Value);
+                if (pivote == 1)
+                {
+                    Producto[] Tempo = productoModel.GetProductosByRangoPrecio(nudPrecioInferior.Value, nudPrecioSuperior.Value);
+                    rtbProductView.Text = "";
+                    if (Tempo == null)
+                    {
+                        rtbProductView.Text = "No se ha encontrado ningún elemento con la característica que esta buscando";
+                        return;
+                    }
+                    else
+                    {
+                        for (int i = 0; i < Tempo.Length; i++)
+                        {
+                            string cadena = $"Id: {Tempo[i].Id}, Nombre: {Tempo[i].Nombre}, Descripcion: {Tempo[i].Descripcion}, Cantidad: {Tempo[i].Existencia}, Precio: {Tempo[i].Precio}, Caducidad: {Tempo[i].Vencimiento}, Unidad de medida: {Tempo[i].UnidadMedida}";
+                            rtbProductView.Text = rtbProductView.Text + @"
+" + cadena;
+                        }
+                        return;
+                    }
+                }
+                MessageBox.Show("Para realizar la busqueda debe de cambiar los valores", "Datos incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                nudPrecioInferior.Value = 0;
+                nudPrecioSuperior.Value = 0;
+            }
+            if (cmbFinderType.SelectedIndex == 2)
+            {
+                if (cmbUnidadMedida.Text == string.Empty)
+                {
+                    MessageBox.Show("Debe de ingresar una unidad de medida", "Error con la unidad de medida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Producto[] Tempo = productoModel.GetProductosByUnidadMedida((UnidadMedida)cmbUnidadMedida.SelectedIndex);
+                    rtbProductView.Text = "";
+                    if (Tempo == null)
+                    {
+                        rtbProductView.Text = "No se ha encontrado ningún elemento con la característica que esta buscando";
+                    }
+                    else
+                    {
+                        for (int i = 0; i < Tempo.Length; i++)
+                        {
+                            string cadena = $"Id: {Tempo[i].Id}, Nombre: {Tempo[i].Nombre}, Descripcion: {Tempo[i].Descripcion}, Cantidad: {Tempo[i].Existencia}, Precio: {Tempo[i].Precio}, Caducidad: {Tempo[i].Vencimiento}, Unidad de medida: {Tempo[i].UnidadMedida}";
+                            rtbProductView.Text = rtbProductView.Text + @"
+" + cadena;
+                        }
+                    }
+                }
+            }
+            if (cmbFinderType.SelectedIndex == 3)
+            {
+                Producto[] Tempo = productoModel.GetProductosByFechaVencimiento(dtpFechaCaducidad.Value);
+                rtbProductView.Text = "";
+                if (Tempo == null)
+                {
+                    rtbProductView.Text = "No se ha encontrado ningún elemento con la característica que esta buscando";
+                }
+                else
+                {
+                    for (int i = 0; i < Tempo.Length; i++)
+                    {
+                        string cadena = $"Id: {Tempo[i].Id}, Nombre: {Tempo[i].Nombre}, Descripcion: {Tempo[i].Descripcion}, Cantidad: {Tempo[i].Existencia}, Precio: {Tempo[i].Precio}, Caducidad: {Tempo[i].Vencimiento   }, Unidad de medida: {Tempo[i].UnidadMedida}";
+                        rtbProductView.Text = rtbProductView.Text + @"
+" + cadena;
+                    }
+                }
+            }
+        }
+
+        private void btnCerrarApp_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

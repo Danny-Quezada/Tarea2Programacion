@@ -54,7 +54,8 @@ namespace Infraestructure.Productos
             if (pds == null)
             {
                 pds = new Producto[1];
-                pds[0] = p;
+                pds[pds.Length - 1] = p;
+                return;
                 
             }
 			
@@ -108,6 +109,7 @@ namespace Infraestructure.Productos
         //añadir como parametro un producto p
         public Producto GetProductoById(int id)
 		{
+            /*
             if (productos != null)
             {
                 Array.Sort(productos, new Producto.ProductoIdCompare());
@@ -116,8 +118,9 @@ namespace Infraestructure.Productos
                 return index < 0 ? null : productos[index];
             }
             return null;
+            */
             //Voy a dejar el primero, fue el que probe yo y me sirvio
-            /*Array.Sort(productos, new Producto.ProductoIdCompare());
+            Array.Sort(productos, new Producto.ProductoIdCompare());
             for(int i=0; i<productos.Length; i++)
 			{
 				if (id == productos[i].Id)
@@ -126,7 +129,6 @@ namespace Infraestructure.Productos
 				}
 			}
             return null;
-            */
         }
         public Producto[] DeleteBy(Producto p)
         {
