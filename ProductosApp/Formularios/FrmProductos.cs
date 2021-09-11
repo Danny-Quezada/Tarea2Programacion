@@ -70,9 +70,10 @@ namespace ProductosApp.Formularios
                 nudPrecioInferior.Visible = false;
                 nudPrecioSuperior.Visible = false;
                 lblPrecioInferior.Visible = false;
-                lblPrecioSuperior.Visible = false;
-            }
-            if (cmbFinderType.SelectedIndex == 3)
+				lblPrecioSuperior.Visible = false;
+                dtpFechaCaducidad.Visible = false;
+			}
+			if (cmbFinderType.SelectedIndex == 3)
             {
                 dtpFechaCaducidad.Visible = true;
                 cmbUnidadMedida.Visible = false;

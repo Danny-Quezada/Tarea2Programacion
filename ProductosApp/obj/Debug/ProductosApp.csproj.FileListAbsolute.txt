@@ -56,3 +56,23 @@ C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\ProductosApp\obj\Debug\Produc
 C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\ProductosApp\obj\Debug\ProductosApp.csproj.CopyComplete
 C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\ProductosApp\obj\Debug\ProductosApp.exe
 C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\ProductosApp\obj\Debug\ProductosApp.pdb
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\ProductosApp.exe.config
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\ProductosApp.exe
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\ProductosApp.pdb
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\Domain.dll
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\Infraestructure.dll
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\Domain.pdb
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\Infraestructure.pdb
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.csproj.AssemblyReference.cache
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.Formularios.ActualizarProducto.resources
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.Formularios.FrmFindID.resources
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.Formularios.FrmProducto.resources
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.Formularios.FrmProductos.resources
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.Properties.Resources.resources
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.csproj.GenerateResource.cache
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.csproj.CoreCompileInputs.cache
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.csproj.CopyComplete
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.exe
+C:\Users\ZGN\OneDrive\Escritorio\ProgramacionTarea\ProductosApp\obj\Debug\ProductosApp.pdb

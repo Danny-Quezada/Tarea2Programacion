@@ -235,19 +235,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kevin Roa\\.nuget\\packages\\": {}
+    "C:\\Users\\ZGN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kevin Roa\\Source\\Repos\\Tarea2Programacion\\Infraestructure\\Infraestructure.csproj",
+      "projectUniqueName": "C:\\Users\\ZGN\\OneDrive\\Escritorio\\ProgramacionTarea\\Infraestructure\\Infraestructure.csproj",
       "projectName": "Infraestructure",
-      "projectPath": "C:\\Users\\Kevin Roa\\Source\\Repos\\Tarea2Programacion\\Infraestructure\\Infraestructure.csproj",
-      "packagesPath": "C:\\Users\\Kevin Roa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kevin Roa\\Source\\Repos\\Tarea2Programacion\\Infraestructure\\obj\\",
+      "projectPath": "C:\\Users\\ZGN\\OneDrive\\Escritorio\\ProgramacionTarea\\Infraestructure\\Infraestructure.csproj",
+      "packagesPath": "C:\\Users\\ZGN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ZGN\\OneDrive\\Escritorio\\ProgramacionTarea\\Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Kevin Roa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ZGN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -261,8 +266,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Kevin Roa\\Source\\Repos\\Tarea2Programacion\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Kevin Roa\\Source\\Repos\\Tarea2Programacion\\Domain\\Domain.csproj"
+            "C:\\Users\\ZGN\\OneDrive\\Escritorio\\ProgramacionTarea\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\ZGN\\OneDrive\\Escritorio\\ProgramacionTarea\\Domain\\Domain.csproj"
             }
           }
         }
