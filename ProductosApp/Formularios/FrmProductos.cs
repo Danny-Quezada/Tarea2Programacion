@@ -31,11 +31,56 @@ namespace ProductosApp.Formularios
         private void FrmProductos_Load(object sender, EventArgs e)
         {
             cmbUnidadMedida.Items.AddRange(Enum.GetValues(typeof(UnidadMedida)).Cast<object>().ToArray());
+            cmbUnidadMedida.Visible = false;
+            txtFinder.Visible = false;
+            nudPrecioInferior.Visible = false;
+            nudPrecioSuperior.Visible = false;
+            dtpFechaCaducidad.Visible = false;
+            lblPrecioInferior.Visible = false;
+            lblPrecioSuperior.Visible = false;
         }
 
         private void CmbFinderType_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cmbFinderType.SelectedIndex == 0)
+            {
+                txtFinder.Visible = true;
+                nudPrecioInferior.Visible = false;
+                nudPrecioSuperior.Visible = false;
+                cmbUnidadMedida.Visible = false;
+                dtpFechaCaducidad.Visible = false;
+                lblPrecioInferior.Visible = false;
+                lblPrecioSuperior.Visible = false;
+            }
+            if (cmbFinderType.SelectedIndex == 1)
+            {
+                nudPrecioInferior.Visible = true;
+                nudPrecioSuperior.Visible = true;
+                lblPrecioInferior.Visible = true;
+                lblPrecioSuperior.Visible = true;
+                cmbUnidadMedida.Visible = false;
+                txtFinder.Visible = false;
+                dtpFechaCaducidad.Visible = false;
+            }
+            if (cmbFinderType.SelectedIndex == 2)
+            {
+                cmbUnidadMedida.Visible = true;
+                txtFinder.Visible = false;
+                nudPrecioInferior.Visible = false;
+                nudPrecioSuperior.Visible = false;
+                lblPrecioInferior.Visible = false;
+                lblPrecioSuperior.Visible = false;
+            }
+            if (cmbFinderType.SelectedIndex == 3)
+            {
+                dtpFechaCaducidad.Visible = true;
+                cmbUnidadMedida.Visible = false;
+                txtFinder.Visible = false;
+                nudPrecioInferior.Visible = false;
+                nudPrecioSuperior.Visible = false;
+                lblPrecioInferior.Visible = false;
+                lblPrecioSuperior.Visible = false;
+            }
         }
 
         private void BtnNew_Click(object sender, EventArgs e)
@@ -46,7 +91,18 @@ namespace ProductosApp.Formularios
             frmProducto.ShowDialog();
 
             rtbProductView.Text = productoModel.GetProductosAsJson();
-
+        }
+        private int ValidarPrecios(decimal a, decimal b)
+        {
+            if (a < b || a == b)
+            {
+                return 1;
+            }
+            if (a > b)
+            {
+                return -1;
+            }
+            return 0;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -70,6 +126,37 @@ namespace ProductosApp.Formularios
             
             rtbProductView.Text = productoModel.GetProductosAsJson();
             
+        }
+
+        private void txtFinder_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+                return;
+            }
+            e.Handled = true;
+            MessageBox.Show("Solo debe de ingresar números", "Error en el id", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void nudPrecioInferior_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+                return;
+            }
+            e.Handled = true;
+        }
+
+        private void nudPrecioSuperior_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+                return;
+            }
+            e.Handled = true;
         }
     }
 }

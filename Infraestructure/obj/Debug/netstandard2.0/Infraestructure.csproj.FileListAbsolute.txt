@@ -27,3 +27,16 @@ C:\Users\ZGN\OneDrive\Escritorio\Programacion\ProgramacionPractica\Infraestructu
 C:\Users\ZGN\OneDrive\Escritorio\Programacion\ProgramacionPractica\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.csproj.CopyComplete
 C:\Users\ZGN\OneDrive\Escritorio\Programacion\ProgramacionPractica\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.dll
 C:\Users\ZGN\OneDrive\Escritorio\Programacion\ProgramacionPractica\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.pdb
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\bin\Debug\netstandard2.0\Infraestructure.deps.json
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\bin\Debug\netstandard2.0\Infraestructure.dll
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\bin\Debug\netstandard2.0\Infraestructure.pdb
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.csproj.AssemblyReference.cache
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.AssemblyInfo.cs
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.csproj.CopyComplete
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.dll
+C:\Users\Kevin Roa\Source\Repos\Tarea2Programacion\Infraestructure\obj\Debug\netstandard2.0\Infraestructure.pdb
